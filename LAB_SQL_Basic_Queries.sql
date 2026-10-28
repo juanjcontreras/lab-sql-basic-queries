@@ -24,9 +24,11 @@ SELECT DISTINCT release_year FROM film;
 
 -- 5.1 Determine the number of stores that the company has.
 SELECT count(store_id) FROM store;
-
+-- 5.2 Determine the number of employees that the company has.
+SELECT count(staff_id) as number_of_employees
+ FROM staff;
 -- 5.3 Determine how many films are available for rent and how many have been rented.
-SELECT COUNT(DISTINCT film_id) AS films_available
+SELECT COUNT (film_id) AS films_available
 FROM inventory;
 
 SELECT count(rental_id) as films_rented
